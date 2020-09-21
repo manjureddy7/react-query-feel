@@ -1,0 +1,29 @@
+### public route
+GET http://localhost:8080/
+
+### get all movies
+GET http://localhost:8080/movies
+
+### get single movie
+GET http://localhost:8080/movie/1
+
+### Create new movie
+POST  http://localhost:8080/movies
+Content-Type: application/json
+
+{
+    "name": "Harry Potter",
+    "id": "100",
+    "rating": "9.05"
+}
+
+### Update single Movie
+PUT   http://localhost:8080/movie/1
+Content-Type: application/json
+
+{
+    "rating": "9.15"
+}
+
+### Delete single Movie
+DELETE http://localhost:8080/movie/1
